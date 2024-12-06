@@ -24,7 +24,12 @@ const winningConditions = [
 function handleCellPlayed(clickedCell, clickedCellIndex) {
     gameState[clickedCellIndex] = currentPlayer;
     clickedCell.innerHTML = currentPlayer;
+    clickedCell.style.transform = "scale(1.3)";
+    setTimeout(() => {
+        clickedCell.style.transform = "scale(1)";
+    }, 200);
 }
+
 
 function handlePlayerChange() {
     currentPlayer = currentPlayer === "X" ? "O" : "X";

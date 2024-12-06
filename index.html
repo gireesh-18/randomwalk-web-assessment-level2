@@ -2,16 +2,18 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport"
-            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Tic-Tac-Toe</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css"> <!-- Link to the external CSS for styling -->
     </head>
     <body>
         <section>
+            <!-- Game Title -->
             <h1 class="game--title">Tic-Tac-Toe</h1>
+            <!-- Game Grid: 9 divs representing the 3x3 grid -->
             <div class="game--container">
+                <!-- Each div represents a cell with a unique data-cell-index -->
                 <div data-cell-index="0" class="cell"></div>
                 <div data-cell-index="1" class="cell"></div>
                 <div data-cell-index="2" class="cell"></div>
@@ -22,9 +24,12 @@
                 <div data-cell-index="7" class="cell"></div>
                 <div data-cell-index="8" class="cell"></div>
             </div>
+            <!-- Game Status: Displays whose turn it is or the result -->
             <h2 class="game--status"></h2>
+            <!-- Restart Button -->
             <button class="game--restart">Restart Game</button>
         </section>
+        <!-- Link to the external JavaScript for functionality -->
         <script src="script.js"></script>
     </body>
 </html>

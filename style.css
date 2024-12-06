@@ -1,93 +1,96 @@
-/* Peaceful Background */
+/* Apply a peaceful gradient background */
 body {
-    font-family: "Arial", sans-serif;
+    font-family: "Arial", sans-serif; /* Use a clean, readable font */
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #a2d9ff, #ffffff);
+    background: linear-gradient(135deg, #a2d9ff, #ffffff); /* Soft blue gradient */
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Full-screen height */
 }
 
-/* Centered Section */
+/* Center the game section */
 section {
     text-align: center;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     padding: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-/* Game Title Animation */
+/* Animated game title */
 .game--title {
-    font-size: 60px;
-    color: #2b6777;
+    font-size: 60px; /* Large title */
+    color: #2b6777; /* Calming blue color */
     margin: 10px auto;
-    animation: pulse 2s infinite;
+    animation: pulse 2s infinite; /* Repeating scale animation */
 }
 
-/* Game Grid */
+/* Game grid container */
 .game--container {
     display: grid;
-    grid-template-columns: repeat(3, auto);
+    grid-template-columns: repeat(3, auto); /* 3 columns for 3x3 grid */
     width: 306px;
     margin: 10px auto;
-    background-color: #f8f9fa;
-    border: 4px solid #2b6777;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa; /* Light gray background */
+    border: 4px solid #2b6777; /* Border around the grid */
+    border-radius: 10px; /* Slightly rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
+/* Each cell in the grid */
 .cell {
-    font-family: "Permanent Marker", cursive;
+    font-family: "Permanent Marker", cursive; /* Fun, playful font */
     width: 100px;
     height: 100px;
-    border: 1px solid #e4e4e4;
-    cursor: pointer;
-    line-height: 100px;
-    font-size: 60px;
-    text-align: center;
-    transition: transform 0.2s ease, color 0.2s ease;
+    border: 1px solid #e4e4e4; /* Light border */
+    cursor: pointer; /* Change cursor on hover */
+    line-height: 100px; /* Vertically center text */
+    font-size: 60px; /* Large font size for X/O */
+    text-align: center; /* Center align text horizontally */
+    transition: transform 0.2s ease, color 0.2s ease; /* Smooth animations */
 }
 
+/* Hover effect for cells */
 .cell:hover {
-    transform: scale(1.1);
-    color: #5586e2;
+    transform: scale(1.1); /* Slightly enlarge cell */
+    color: #5586e2; /* Change text color */
 }
 
-/* Game Status */
+/* Game status message */
 .game--status {
-    font-size: 30px;
-    color: #2b6777;
+    font-size: 30px; /* Large font size */
+    color: #2b6777; /* Calm blue color */
     margin: 20px auto;
 }
 
-/* Restart Button Animation */
+/* Restart button styling */
 .game--restart {
-    background-color: #76c893;
+    background-color: #76c893; /* Green background */
     width: 200px;
     height: 50px;
     font-size: 20px;
-    color: white;
+    color: white; /* White text */
     border: none;
-    border-radius: 25px;
+    border-radius: 25px; /* Rounded button */
     cursor: pointer;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth effects */
 }
 
+/* Hover effect for restart button */
 .game--restart:hover {
-    background-color: #5da071;
-    transform: scale(1.1);
+    background-color: #5da071; /* Darker green on hover */
+    transform: scale(1.1); /* Slightly enlarge */
 }
 
-/* Title Pulse Animation */
+/* Animation for the game title */
 @keyframes pulse {
     0%, 100% {
-        transform: scale(1);
+        transform: scale(1); /* Normal size */
     }
     50% {
-        transform: scale(1.05);
+        transform: scale(1.05); /* Slightly larger */
     }
 }
